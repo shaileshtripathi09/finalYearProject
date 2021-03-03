@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IoTApplication</string>
+    <string name="iot_application">IOT Application</string>
+    <string name="area_1">Area 1</string>
+    <string name="temperature">Temperature</string>
+    <string name="air_quality">Air Quality</string>
+    <string name="humidity">Humidity</string>
+    <string name="area_2">Area 2</string>
+    <string name="danger">DANGER</string>
+    <string name="tap_hear_to_add_update_contact_number">Tap hear to add/update contact details</string>
+    <string name="submit">Save</string>
+    <string name="tap_to_enter_contact_number">Tap to enter contact number</string>
+</resources>

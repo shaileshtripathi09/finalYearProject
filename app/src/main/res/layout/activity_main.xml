@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_double"
+    android:layout_gravity="center"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/iot_application"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvArea1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMain"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/area_1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/temp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvArea1"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/temperature"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvArea1"
+        android:layout_alignStart="@+id/temp1"
+        android:layout_alignLeft="@+id/temp1"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_round"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        tools:text="result1" />
+
+    <TextView
+        android:id="@+id/hum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp1"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/humidity"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/h1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp1"
+        android:layout_alignStart="@+id/hum1"
+        android:layout_alignLeft="@+id/hum1"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_round"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        tools:text="result2" />
+
+    <TextView
+        android:id="@+id/air1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hum1"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/air_quality"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hum1"
+        android:layout_alignStart="@+id/air1"
+        android:layout_alignLeft="@+id/air1"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_round"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        tools:text="result3" />
+
+
+    <TextView
+        android:id="@+id/tvArea2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/air1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/area_2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/temp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvArea2"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/temperature"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvArea2"
+        android:layout_alignStart="@+id/temp2"
+        android:layout_alignLeft="@+id/temp2"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_round"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        tools:text="result1" />
+
+    <TextView
+        android:id="@+id/hum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp2"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/humidity"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/h2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp2"
+        android:layout_alignStart="@+id/hum2"
+        android:layout_alignLeft="@+id/hum2"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_round"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        tools:text="result2" />
+
+    <TextView
+        android:id="@+id/air2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hum2"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/air_quality"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/a2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hum2"
+        android:layout_alignStart="@+id/air2"
+        android:layout_alignLeft="@+id/air2"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_round"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        tools:text="result3" />
+
+
+    <ImageView
+        android:id="@+id/imagecontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a2"
+        android:src="@drawable/ic_person_add"
+        android:layout_marginStart="150sp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="150sp" />
+
+    <EditText
+        android:id="@+id/editTextPersonContact"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@+id/imagecontact"
+        android:ems="20"
+        android:textColor="@color/colorWhite"
+        android:inputType="textPersonName"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:hint="@string/tap_hear_to_add_update_contact_number"
+        android:gravity="center"
+        android:textColorHint="@color/colorWhite"
+        android:background="@android:color/transparent"/>
+
+
+
+    <Button
+        android:id="@+id/addContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150sp"
+        android:background="@drawable/bg_round_red"
+        android:layout_marginTop="40sp"
+        android:layout_below="@id/editTextPersonContact"
+        android:textColor="@color/colorWhite"
+        android:text="@string/submit"
+        android:layout_marginLeft="150sp" />
+
+
+</RelativeLayout>
